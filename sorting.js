@@ -12,8 +12,8 @@ window.addEventListener('load',function(){
 function disableSortingBtn(){
     document.querySelector(".bubbleSort").disabled = true;
     document.querySelector(".insertionSort").disabled = true;
-    document.querySelector(".mergeSort").disabled = true;
-    document.querySelector(".quickSort").disabled = true;
+    // document.querySelector(".mergeSort").disabled = true;
+    // document.querySelector(".quickSort").disabled = true;
     document.querySelector(".selectionSort").disabled = true;
 }
 
@@ -21,8 +21,8 @@ function disableSortingBtn(){
 function enableSortingBtn(){
     document.querySelector(".bubbleSort").disabled = false;
     document.querySelector(".insertionSort").disabled = false;
-    document.querySelector(".mergeSort").disabled = false;
-    document.querySelector(".quickSort").disabled = false;
+    // document.querySelector(".mergeSort").disabled = false;
+    // document.querySelector(".quickSort").disabled = false;
     document.querySelector(".selectionSort").disabled = false;
 }
 
@@ -125,48 +125,47 @@ newArray.addEventListener("click", function(){
 const bubbleId = document.getElementById("bubble");
 const selectionId = document.getElementById("selection");
 const insertionId = document.getElementById("insertion");
-const mergeId = document.getElementById("merge");
-const quickId = document.getElementById("quick");
+// const mergeId = document.getElementById("merge");
+// const quickId = document.getElementById("quick");
 
 function hideCode(){
     bubbleId.style.display="none";
     selectionId.style.display="none";
     insertionId.style.display="none";
-    mergeId.style.display="none";
-    quickId.style.display="none";
+    // mergeId.style.display="none";
+    // quickId.style.display="none";
 }
 function bubbleCode(){
     bubbleId.style.removeProperty('display');
     selectionId.style.display="none";
     insertionId.style.display="none";
-    mergeId.style.display="none";
-    quickId.style.display="none";
+    // mergeId.style.display="none";
+    // quickId.style.display="none";
 }
 function selectionCode(){
     bubbleId.style.display="none";
     selectionId.style.removeProperty('display');
     insertionId.style.display="none";
-    mergeId.style.display="none";
-    quickId.style.display="none";
+    // mergeId.style.display="none";
+    // quickId.style.display="none";
 }
 function insertionCode(){
     insertionId.style.removeProperty('display');
     bubbleId.style.display="none";
     selectionId.style.display="none";
-    mergeId.style.display="none";
-    quickId.style.display="none";
+    // mergeId.style.display="none";
+    // quickId.style.display="none";
 }
-function mergeCode(){
-    mergeId.style.removeProperty('display');
-    bubbleId.style.display="none";
-    selectionId.style.display="none";
-    insertionId.style.display="none";
-    quickId.style.display="none";
-}
-function quickCode(){
-    quickId.style.removeProperty('display');
-    bubbleId.style.display="none";
-    selectionId.style.display="none";
-    insertionId.style.display="none";
-    mergeId.style.display="none";
-}
+// function mergeCode(){
+//     mergeId.style.removeProperty('display');
+//     bubbleId.style.display="none";
+//     selectionId.style.display="none";
+//     insertionId.style.display="none";
+//     quickId.style.display="none";
+// }
+// function quickCode(){
+//     quickId.style.removeProperty('display');
+//     bubbleId.style.display="none";
+//     selectionId.style.display="none";
+//     insertionId.style.display="none";
+//     mergeId.style.display="none";
