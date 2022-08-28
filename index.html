@@ -27,8 +27,8 @@
                 <button type="button" class="btn btn-primary bubbleSort">Bubble Sort</button>
                 <button type="button" class="btn btn-primary selectionSort">Selection Sort</button>
                 <button type="button" class="btn  btn-primary insertionSort">Insertion Sort</button>
-                <button type="button" class="btn btn-primary quickSort">Quick Sort</button>
-                <button type="button" class="btn btn-primary mergeSort">Merge Sort</button>
+                <!-- <button type="button" class="btn btn-primary quickSort">Quick Sort</button>
+                <button type="button" class="btn btn-primary mergeSort">Merge Sort</button> -->
             </div>
         </div>
     </nav>
@@ -84,7 +84,6 @@
 
           </div>
           <!-- SELECTION SORT -->
-          
           <div class="accordion accordion-flush" id="selection">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
@@ -137,7 +136,6 @@
                     }</pre></div>
               </div>
             </div>
-            
           </div>
           <!-- INSERTION SORT -->
           <div class="accordion accordion-flush" id="insertion">
@@ -193,7 +191,7 @@
             </div>
 
           </div>
-          <!-- MERGE CODE -->
+          <!-- MERGE CODE
           <div class="accordion accordion-flush" id="merge">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
@@ -302,8 +300,8 @@
             </div>
 
           </div>
-          <!-- QUICK SORT -->
-          <div class="accordion accordion-flush" id="quick">
+          QUICK SORT -->
+          <!-- <div class="accordion accordion-flush" id="quick">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="color: #4B9CD3; font-weight: bold; font-size: 30px;">
@@ -353,50 +351,7 @@
                     }
                       
                     /* The main function that implements QuickSort
-                              arr[] --> Array to be sorted,
-                              low --> Starting index,
-                              high --> Ending index
-                     */
-                    static void quickSort(int[] arr, int low, int high)
-                    {
-                        if (low < high) 
-                        {
-                              
-                            // pi is partitioning index, arr[p]
-                            // is now at right place 
-                            int pi = partition(arr, low, high);
-                      
-                            // Separately sort elements before
-                            // partition and after partition
-                            quickSort(arr, low, pi - 1);
-                            quickSort(arr, pi + 1, high);
-                        }
-                    }
-                      
-                    // Function to print an array 
-                    static void printArray(int[] arr, int size)
-                    {
-                        for(int i = 0; i < size; i++)
-                            System.out.print(arr[i] + " ");
-                              
-                        System.out.println();
-                    }
-                      
-                    // Driver Code
-                    public static void main(String[] args)
-                    {
-                        int[] arr = { 10, 7, 8, 9, 1, 5 };
-                        int n = arr.length;
-                          
-                        quickSort(arr, 0, n - 1);
-                        System.out.println("Sorted array: ");
-                        printArray(arr, n);
-                    }
-                    }</pre></div>
-              </div>
-            </div>
-
-          </div>
+                            -->
     </div>
 
 
@@ -405,8 +360,9 @@
     <script src="sorting.js"></script>
     <script src="bubble.js"></script>
     <script src="insertion.js"></script>
-    <script src="merge.js"></script>
-    <script src="quick.js"></script>
     <script src="selection.js"></script>
-</body>
+    </body>
 </html>
+    <!-- <script src="merge.js"></script>
+    <script src="quick.js"></script>
+   
